@@ -1,0 +1,15 @@
+.hero{
+    @apply flex flex-col w-full items-center p-10 bg-slate-50 h-screen text-white;
+    background: url('/Assets/turimoshuila.jpg'); 
+    /* centramos */
+    
+    background-position: center;
+    /* expandimos */
+    background-size: cover;
+    /* fijamos */
+    background-attachment: fixed;
+/* añadimos un overlay */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.69);
+
+}

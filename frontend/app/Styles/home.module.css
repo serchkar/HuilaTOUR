@@ -1,0 +1,64 @@
+
+.menu{
+    @apply bg-verdeH-600 w-full flex items-center justify-around h-16;
+}
+
+.navegacion{
+   @apply flex flex-row;
+}
+
+.navegacion li{
+    @apply  text-xl font-bold mr-6
+    
+    transition-colors ease-in-out
+    cursor-pointer
+    ;
+}
+
+.botonAccion {
+@apply bg-amarilloH-500 text-black rounded-3xl mt-4 w-60 
+hover:bg-amarilloH-400 
+transition-all ease-in-out
+hover:shadow-xl  
+;
+}
+
+.divpopulares{
+    @apply  p-4 flex gap-6 items-center justify-center flex-wrap
+}
+
+.hero{
+    @apply w-full flex flex-col p-10 justify-center items-center h-80;
+    background: url('/Assets/Hero.jpg'); 
+    /* centramos */
+    background-position: center;
+    /* expandimos */
+    background-size: cover;
+    /* fijamos */
+    background-attachment: fixed;
+/* añadimos un overlay */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.69);
+
+}
+
+.botonLogin{
+    @apply bg-slate-50 rounded-3xl text-zinc-900 px-3 py-1  hover:text-verdeH-700;
+}
+
+@media (max-width: 640px) {
+    .hero{
+        @apply h-auto text-center items-center justify-center;
+    }
+
+    .divpopulares{
+        @apply flex-col;
+    }
+
+    .botonLogin{
+        @apply text-sm;
+    }
+    .navegacion li{
+        @apply text-sm;
+    }
+  }

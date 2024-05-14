@@ -1,0 +1,26 @@
+
+.hero{
+    @apply bg-emerald-950 
+    h-72 w-full
+    flex flex-col justify-center items-center relative;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.69);
+}
+
+
+.overlay{
+    @apply absolute z-10 flex w-full h-full transition-all ease-in-out bg-black bg-opacity-0
+     text-white  cursor-pointer flex-col items-center justify-center text-center ;
+}
+
+.overlay:hover{
+    @apply bg-opacity-40
+}
+
+.text{
+    @apply opacity-0 transition-all ease-in-out duration-500
+    
+}
+.overlay:hover .text{
+    @apply opacity-100 
+}
